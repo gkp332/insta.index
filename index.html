@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Best Time to Post on Insta 📸</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 50px;
+    }
 
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .time-box {
+      background: #222;
+      border: 3px dashed #ff69b4;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #ff69b4;
+    }
+
+    .emoji {
+      font-size: 2em;
+    }
+
+    button {
+      background: #ff69b4;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>When Should You Post on Insta? 🤔</h1>
+
+  <div class="emoji">📷✨💅😎📱</div>
+
+  <div class="time-box" id="result">
+    Click the button and unlock the secrets of the Insta gods 🔓📱
+  </div>
+
+  <button onclick="showBestTime()">Show Me 🔮</button>
+
+  <script>
+    function showBestTime() {
+      const times = [
+        "🔥 Right now! Like literally this second!",
+        "📈 11 AM — people are pretending to work but actually scrolling",
+        "🕒 3 PM — snack break + scroll combo",
+        "🌆 6 PM — peak scrolling after surviving the day",
+        "🌙 9 PM — bedtime doomscrolling, baby!",
+        "😂 Any time is good if the meme is fire"
+      ];
+      const randomTime = times[Math.floor(Math.random() * times.length)];
+      document.getElementById("result").innerText = randomTime;
+    }
+  </script>
+
+</body>
+</html>
